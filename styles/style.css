@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'Ruh1';
+  src: url("/fonts/FrankRuhlLibre-Regular.ttf");
+}
+
+@font-face {
+  font-family: 'Ruh1 Medium';
+  src: url("/fonts/FrankRuhlLibre-Medium.ttf");
+}
+
+@font-face {
+  font-family: 'Vibes';
+  src: url("/fonts/GreatVibes-Regular.ttf");
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+li,
+button,
+label,
+input,
+p,
+a {
+  font-size: 2.5rem;
+  color: #2c2c2c;
+}
+
+h2 {
+  font-size: 4rem;
+}
+
+h3 {
+  font-size: 3rem;
+  font-weight: normal;
+}
+
+h4,
+h5 {
+  font-size: 2rem;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: 'Ruh1', sans-serif;
+  -webkit-animation: opening 1s ease-in-out;
+          animation: opening 1s ease-in-out;
+}
+
+h1 {
+  font-family: 'Vibes', sans-serif;
+}
+/*# sourceMappingURL=style.css.map */
