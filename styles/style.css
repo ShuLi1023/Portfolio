@@ -205,7 +205,7 @@ nav ul {
 }
 
 .active {
-  background: #154353;
+  background: #155349;
   color: white;
   padding: 1rem 3rem;
   border-radius: 2rem;
@@ -218,19 +218,26 @@ nav ul {
           flex: 1 1 40rem;
 }
 
-#plant-left {
-  -webkit-animation: plant 1.5s ease infinite alternate;
-          animation: plant 1.5s ease infinite alternate;
+.intro-images {
+  width: 50%;
 }
 
-#plant-right {
-  -webkit-animation: plant 1.5s ease infinite alternate 0.5s;
-          animation: plant 1.5s ease infinite alternate 0.5s;
+#leaf-left {
+  -webkit-animation: plant 1.5s ease infinite alternate;
+          animation: plant 1.5s ease infinite alternate;
+  transform-box: fill-box;
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+}
+
+#ball {
+  -webkit-animation: ball 1.5s ease infinite alternate 0.5s;
+          animation: ball 1.5s ease infinite alternate 0.5s;
 }
 
 #me {
-  -webkit-animation: me 1.5s ease infinite alternate;
-          animation: me 1.5s ease infinite alternate;
+  -webkit-animation: me 2s ease infinite alternate;
+          animation: me 2s ease infinite alternate;
   -webkit-transform-origin: bottom;
           transform-origin: bottom;
 }
@@ -243,47 +250,69 @@ nav ul {
           transform-origin: bottom;
 }
 
-@-webkit-keyframes plant {
+@-webkit-keyframes ball {
   from {
-    -webkit-transform: translateY(0%);
-            transform: translateY(0%);
+    -webkit-transform: translateY(1%);
+            transform: translateY(1%);
   }
   to {
-    -webkit-transform: translateY(-30%);
-            transform: translateY(-30%);
+    -webkit-transform: translateY(-4%);
+            transform: translateY(-4%);
+  }
+}
+
+@keyframes ball {
+  from {
+    -webkit-transform: translateY(1%);
+            transform: translateY(1%);
+  }
+  to {
+    -webkit-transform: translateY(-4%);
+            transform: translateY(-4%);
+  }
+}
+
+@-webkit-keyframes plant {
+  from {
+    -webkit-transform: rotateZ(-5deg);
+            transform: rotateZ(-5deg);
+  }
+  to {
+    -webkit-transform: rotateZ(3deg);
+            transform: rotateZ(3deg);
   }
 }
 
 @keyframes plant {
   from {
-    -webkit-transform: translateY(0%);
-            transform: translateY(0%);
+    -webkit-transform: rotateZ(-5deg);
+            transform: rotateZ(-5deg);
   }
   to {
-    -webkit-transform: translateY(-30%);
-            transform: translateY(-30%);
+    -webkit-transform: rotateZ(3deg);
+            transform: rotateZ(3deg);
   }
 }
 
 @-webkit-keyframes me {
   from {
-    -webkit-transform: rotateZ(5deg);
-            transform: rotateZ(5deg);
+    -webkit-transform: rotateZ(3deg);
+            transform: rotateZ(3deg);
   }
   to {
-    -webkit-transform: rotateZ(-5deg);
-            transform: rotateZ(-5deg);
+    -webkit-transform: rotateZ(-4deg);
+            transform: rotateZ(-4deg);
   }
 }
 
 @keyframes me {
   from {
-    -webkit-transform: rotateZ(5deg);
-            transform: rotateZ(5deg);
+    -webkit-transform: rotateZ(3deg);
+            transform: rotateZ(3deg);
   }
   to {
-    -webkit-transform: rotateZ(-5deg);
-            transform: rotateZ(-5deg);
+    -webkit-transform: rotateZ(-4deg);
+            transform: rotateZ(-4deg);
   }
 }
 
@@ -397,8 +426,9 @@ nav ul {
 .contact form button {
   width: 100%;
   padding: 2rem;
-  background: #154353;
+  background: #155349;
   color: white;
+  border-radius: 10px;
 }
 
 .contact form button:focus {
@@ -406,7 +436,7 @@ nav ul {
 }
 
 footer {
-  background: #154353;
+  background: #155349;
   color: white;
   min-height: 10vh;
   padding: 0% 5%;
@@ -457,7 +487,7 @@ footer h4 {
     display: none;
   }
   svg {
-    width: 80%;
+    width: 90%;
   }
   nav {
     width: 100%;

@@ -72,16 +72,22 @@ nav {
 	flex: 1 1 40rem;
 }
 
-#plant-left {
-	animation: plant 1.5s ease infinite alternate;
+.intro-images {
+    width: 50%;
 }
 
-#plant-right {
-	animation: plant 1.5s ease infinite alternate 0.5s;
+#leaf-left {
+	animation: plant 1.5s ease infinite alternate;
+    transform-box: fill-box;
+    transform-origin: bottom;
+}
+
+#ball {
+	animation: ball 1.5s ease infinite alternate 0.5s;
 }
 
 #me {
-	animation: me 1.5s ease infinite alternate;
+	animation: me 2s ease infinite alternate;
 	transform-origin: bottom;
 }
 
@@ -91,21 +97,30 @@ nav {
 	transform-origin: bottom;
 }
 
+@keyframes ball {
+    from {
+        transform: translateY(1%);
+    }
+    to {
+        transform: translateY(-4%);
+    }
+}
+
 @keyframes plant {
 	from {
-		transform: translateY(0%);
+		transform: rotateZ(-5deg);
 	}
 	to {
-		transform: translateY(-30%);
+		transform: rotateZ(3deg);
 	}
 }
 
 @keyframes me {
 	from {
-		transform: rotateZ(5deg);
+		transform: rotateZ(3deg);
 	}
 	to {
-		transform: rotateZ(-5deg);
+		transform: rotateZ(-4deg);
 	}
 }
 

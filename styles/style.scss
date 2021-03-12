@@ -4,7 +4,7 @@ $header3: 3rem;
 $header4: 2rem;
 $text: 2.5rem;
 $gradient: linear-gradient(left, #38d39f, #38a4d3);
-$background-color: #154353;
+$background-color: #155349;
 $gray-text: #2c2c2c;
 
 @mixin flex($justify, $align, $direction) {
@@ -28,7 +28,7 @@ $gray-text: #2c2c2c;
 		display: none;
 	}
 	svg {
-		width: 80%;
+		width: 90%;
 	}
 	nav {
 		width: 100%;
