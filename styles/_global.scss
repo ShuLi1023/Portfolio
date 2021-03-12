@@ -23,10 +23,16 @@ html {
 	font-size: 62.5%;
 	scroll-behavior: smooth;
 }
+body {
+	font-family: 'Montserrat', sans-serif;
+	animation: opening 1s ease-in-out;
+}
 
 h1 {
+	font-family: 'Vibes', sans-serif;
 	font-size: $header1;
 }
+
 
 li,
 button,
@@ -62,11 +68,3 @@ a {
 	text-decoration: none;
 }
 
-body {
-	font-family: 'Ruh1', sans-serif;
-	animation: opening 1s ease-in-out;
-}
-
-h1 {
-	font-family: 'Vibes', sans-serif;
-}
